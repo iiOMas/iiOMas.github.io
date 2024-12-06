@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+header {
+  position: absolute;
+  /* fixed if i want the header to be fixed while scrolling */
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  /* always appear*/
+  background-color: transparent;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header .logo img {
+  width: 115px;
+  height: auto;
+  display: block;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (max-width: 767px) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+header nav ul li a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+header nav ul li a:hover,header nav ul li a.active {
+  color: #d1a48c;
+  border-bottom: 1px solid #b88f78;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(255 255 255 / 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgb(0 0 0 / 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.menu-icon {
+  z-index: 999;
+  display: none;
+}
+@media (max-width: 767px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.landing {
+  min-height: 100vh;
+  /*viewport*/
+  display: flex;
+  flex-direction: column;
+  background-image: url(../imgs/19c9335a-0ddd-4707-9729-f1a189d3eb04.jpg);
+  background-size: cover;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 0;
+}
+
+.landing .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 60%);
+  z-index: 1;
+}
+
+.landing .text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .landing .text {
+    width: 100%;
+  }
+}
+
+.landing p {
+  color: white;
+  font-size: 1.2em;
+  /* z-index: 2; */
+  font-family: monospace;
+  letter-spacing: 13px;
+}
+
+.landing h1 {
+  color: white;
+  font-size: 6.5em;
+  font-family: "Dancing Script", cursive;
+  z-index: 2;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .landing h1 {
+    font-size: 4em;
+  }
+
+  .landing p {
+    font-size: 0.8em;
+    letter-spacing: 10px;
+  }
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  position: relative;
+  height: 45px;
+  width: 100px;
+  z-index: 3;
+  font-size: 20px;
+  font-family: auto;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  overflow: hidden;
+  border-color: #b88f78;
+  transition: 0.6s;
+}
+
+button::before,button::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  filter: blur(30px);
+  opacity: 0.6;
+  transition: 0.6s;
+}
+
+button::before {
+  width: 60px;
+  background: rgba(255,255,255, 0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+
+button::after {
+  width: 30px;
+  background: rgba(255,255,255, 0.6);
+  transform: translateX(-130px) skewX(-45deg);
+}
+
+button:hover:before,button:hover:after {
+  opacity: 0.6;
+  transform: translateX(320px) skewX(-45deg);
+}
+
+button:hover {
+  background: #b88f78;
+}
