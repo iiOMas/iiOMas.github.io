@@ -25,6 +25,10 @@ html {
   .container {
     width: 750px;
   }
+
+  .menu-icon {
+    display: none !important;
+  }
 }
 
 /* Medium */
@@ -42,13 +46,19 @@ html {
 }
 
 header {
-  position: absolute;
+  /* background-color: transparent; */
+  position: fixed;
   /* fixed if i want the header to be fixed while scrolling */
   left: 0;
   width: 100%;
   z-index: 10;
   /* always appear*/
-  background-color: transparent;
+  transition: background-color 0.4s ease-in-out;
+}
+
+header.scrolled {
+  background-color: black;
+  opacity: 0.95;
 }
 
 header .container {
@@ -93,7 +103,8 @@ header nav ul li a {
   transition: color 0.3s, border-bottom 0.3s;
 }
 
-header nav ul li a:hover,header nav ul li a.active {
+header nav ul li a:hover,
+header nav ul li a.active {
   color: #d1a48c;
   border-bottom: 1px solid #b88f78;
 }
@@ -117,13 +128,16 @@ header nav ul li a:hover,header nav ul li a.active {
 .sidebar li {
   width: 100%;
 }
+
 .sidebar a {
   width: 100%;
 }
+
 .menu-icon {
   z-index: 999;
   display: none;
 }
+
 @media (max-width: 767px) {
   .menu-icon {
     display: block;
@@ -203,17 +217,13 @@ header nav ul li a:hover,header nav ul li a.active {
   }
 }
 
-button a {
-  text-decoration: none;
-  color: white;
-}
-
-button {
+.btn-primary {
   position: relative;
-  height: 45px;
-  width: 100px;
+  height: 35px;
+  width: 150px;
+  color: #b88f78;
   z-index: 3;
-  font-size: 20px;
+  font-size: 15px;
   font-family: auto;
   letter-spacing: 1px;
   border-radius: 5px;
@@ -227,7 +237,8 @@ button {
   transition: 0.6s;
 }
 
-button::before,button::after {
+.btn-primary::before,
+.btn-primary::after {
   position: absolute;
   content: '';
   left: 0;
@@ -238,23 +249,198 @@ button::before,button::after {
   transition: 0.6s;
 }
 
-button::before {
+.btn-primary::before {
   width: 60px;
-  background: rgba(255,255,255, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   transform: translateX(-130px) skewX(-45deg);
 }
 
-button::after {
+.btn-primary::after {
   width: 30px;
-  background: rgba(255,255,255, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   transform: translateX(-130px) skewX(-45deg);
 }
 
-button:hover:before,button:hover:after {
+.btn-primary:hover:before,
+.btn-primary:hover:after {
   opacity: 0.6;
   transform: translateX(320px) skewX(-45deg);
 }
 
-button:hover {
+.btn-primary:hover {
   background: #b88f78;
+  color: white;
+}
+
+/* .welcome {
+  background-image: url(../imgs/Untitled\ design.png);
+  background-size: cover;
+} */
+
+/* .main-heading {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #b88f78;
+  bottom: -30px;
+  width: 120px;
+}
+
+.welcome-text p {
+  color: #777;
+  /* padding-top: 40px; */
+/* position: relative; */
+/* line-height: 20px;
+  padding-left: 15px;
+}
+
+.welcome-text {
+  position: relative;
+}
+
+.welcome-text button {
+  left: 10px;
+  margin-top: 10px;
+}
+
+.welcome-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 9rem;
+}
+
+.Auguste img {
+  width: 341px;
+  height: auto;
+  position: relative;
+  left: 167px;
+  bottom: -4px;
+}  */
+
+.welcome {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imgs/Dark\ Gray\ Simple\ Dark\ Food\ &\ Restaurant\ Service\ Website.png);
+  background-size: cover;
+}
+
+.main-heading h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+
+}
+
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #b88f78;
+  bottom: -30px;
+  width: 120px;
+}
+
+.welcome-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome-content img {
+  width: 400px;
+  position: relative;
+  top: 81px;
+}
+
+.welcome-content p {
+  color: #777;
+  line-height: 1.6;
+  margin-right: 120px;
+}
+
+.details {
+  position: relative;
+  top: 70px;
+}
+
+.details span {
+  font-family: "Dancing Script", cursive;
+  color: #b88f78;
+  padding: 2px;
+  font-size: 22px;
+}
+
+.best-dishes .main-heading {
+  margin-top: 28px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  /* margin-top: 100px; */
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 185px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(1 1 1 / 15%);
+  overflow: hidden;
+  margin: 15px;
+  transition: 0.5s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  align-items: center;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-content button {
+  width: 98px;
+  height: 30px;
+  font-size: 13px;
+  margin-left: 25px;
+}
+
+.card:hover {
+  border: 1px solid #b88f78;
 }
