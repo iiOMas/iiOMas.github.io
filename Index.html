@@ -8,12 +8,15 @@
     <!-- to render the elements "like reset file" -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
         <div class="container">
-            <a href="#" class="logo"><img src="imgs/download-removebg-preview.png" alt="logo"></a>
+            <a href="#home" class="logo"><img src="imgs/download-removebg-preview.png" alt="logo"></a>
             <nav>
                 <!-- <div onclick=showSideBar() class="menu-toggle">&#9776;</div> -->
                 <ul class="sidebar">
@@ -29,7 +32,7 @@
                     <li><a href="#">About us</a></li>
                 </ul>
                 <ul class="nav-links">
-                    <li class="hideOnMobile"><a class="active" href="#">Home</a></li>
+                    <li class="hideOnMobile"><a class="active" href="#home">Home</a></li>
                     <li class="hideOnMobile"><a href="#">Menu</a></li>
                     <li class="hideOnMobile"><a href="#">Events</a></li>
                     <li class="hideOnMobile"><a href="#">Reservation</a></li>
@@ -44,7 +47,7 @@
         </div>
     </header>
 
-    <section class="landing">
+    <section class="landing" id="home">
         <div class="overlay"></div>
         <div class="text">
             <p>WELCOME TO</p>
@@ -63,7 +66,7 @@
             </div>
             <!-- <img src="imgs/pngwing.com.png" alt="pngwing"> -->
             <div class="welcome-content">
-                <div class="details">
+                <div class="welcome-p">
                     <p>
                         Step into a world where culinary dreams come alive! Inspired by the charm and passion of the
                         beloved
@@ -79,11 +82,35 @@
                     </p>
                     <a href="#"><button class="btn btn-primary">Learn More</button></a>
                 </div>
-                <img src="imgs/pngwing.com.png" alt="pngwing">
+                <div class="welcome-img">
+                    <img src="imgs/5e5c1e96-8b0d-4fe9-b711-49423b78700c.jpg" alt="pngwing">
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="stats">
+        <div class="container">
+            <div class="stats-items">
+                <div class="stats-item">
+                    <span>20+</span>
+                    <p>years of experience</p>
+                </div>
+                <div class="stats-item">
+                    <span>50+</span>
+                    <p>special dishes</p>
+                </div>
+                <div class="stats-item">
+                    <span>30+</span>
+                    <p>passionate chefs</p>
+                </div>
+                <div class="stats-item">
+                    <span>100+</span>
+                    <p>awards won</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="best-dishes">
         <div class="main-heading">
             <h2>Our Best Dishes</h2>
@@ -113,10 +140,91 @@
         </div>
     </section>
 
-    <!-- Chairty -->
-    <!-- gallary -->
-    <!-- addres work hours and visit us -->
-    <!-- footer -->
+    <section class="timing">
+        <div class="timing-bg"></div>
+        <div class="container">
+            <div class="main-heading">
+                <h2>Opening Hours</h2>
+            </div>
+            <div class="timing-text">
+                <p>All Week : <span>9:00 am - 11:00 pm</span></p>
+                <p>Officia Holidayes : <span>9:00 am - 1:am</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Our Gallery</h2>
+            </div>
+            <div class="img-gallery">
+                <img src="imgs/10 Photos of the Cook Islands That Will Make You Want to Drop Everything and Buy a Plane Ticket.jpg" alt="">
+                <img src="imgs/5e5c1e96-8b0d-4fe9-b711-49423b78700c.jpg" alt="">
+                <img src="imgs/73c5896c6a092116ae545c2ddbde04d5.jpg" alt="">
+                <img src="imgs/Ratatouille Movie night.jpg" alt="">
+                <img src="imgs/download (1).jpg" alt="">
+                <img src="imgs/download (2).jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col1">
+                <h2 class="addres">ADRESS</h2>
+                <p><i class="fa-solid fa-location-dot"></i> Anaheim,California</p>
+                <p><i class="fa-solid fa-phone"></i> +123456789</p>
+                <p><i class="fa-solid fa-envelope"></i> ratatouille@gmail.com</p>
+                <ul class="media-icon">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col2">
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Reservation</a></li>
+                    <li><a href="">Chairty</a></li>
+                    <li><a href="">About us</a></li>
+                </ul>
+                <p> Whether you're savoring a rustic ratatouille or indulging in a decadent dessert, you'll find
+                    yourself transported to a cozy corner of France. Come dine with us, and remembe
+                    anyone can cook</p>
+            </div>
+            <div class="col3">
+                <p>Subscribe to receive our new offers</p>
+                <form>
+                    <div class="input-wrap">
+                        <input type="email" placeholder="example@gmail.com">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="js/main.js"></script>
