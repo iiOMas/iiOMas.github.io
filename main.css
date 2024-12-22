@@ -155,7 +155,7 @@ header nav ul li a.active {
   /*viewport*/
   display: flex;
   flex-direction: column;
-  background-image: url(../imgs/2.jpg);
+  background-image: url(../imgs/19c9335a-0ddd-4707-9729-f1a189d3eb04.jpg);
   background-size: cover;
   position: relative;
   align-items: center;
@@ -194,10 +194,7 @@ header nav ul li a.active {
   font-size: 1.2em;
   /* z-index: 2; */
   font-family: monospace;
-  letter-spacing: 10px;
-  text-align: center;
-  margin-top: 350px;
-  font-size: 5em;
+  letter-spacing: 13px;
 }
 
 .landing h1 {
@@ -223,7 +220,7 @@ header nav ul li a.active {
 .btn-primary {
   position: relative;
   height: 35px;
-  width: 200px;
+  width: 150px;
   color: #b88f78;
   z-index: 3;
   font-size: 15px;
@@ -398,84 +395,21 @@ header nav ul li a.active {
   font-size: 22px;
 }
 
-.appetizers .myAppetizers {
+.best-dishes .main-heading {
   margin-top: 28px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 28px;
-}
-
-.appetizers .myAppetizers h2{
-  text-align: center;
-  display: inline-block;
-  border: 5px solid #b88f78;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.dotted-line {
-  border: double;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  border-color: #b88f78;
-}
-
-.main-courses .myMainCourses {
-  margin-top: 28px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 28px;
-}
-
-.main-courses .myMainCourses h2{
-  text-align: center;
-  display: inline-block;
-  border: 5px solid #b88f78;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.desserts .myDesserts {
-  margin-top: 28px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 28px;
-}
-
-.desserts .myDesserts h2{
-  text-align: center;
-  display: inline-block;
-  border: 5px solid #b88f78;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.additional-dishes .myAdditionalDishes{
-  margin-top: 28px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 28px;
-}
-
-.additional-dishes .myAdditionalDishes h2{
-  text-align: center;
-  display: inline-block;
-  border: 5px solid #b88f78;
-  padding: 10px;
-  border-radius: 10px;
 }
 
 .card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 25px;
   /* margin-top: 100px; */
   margin-bottom: 30px;
 }
 
 .card {
-  width: 400px;
+  width: 185px;
   background-color: #f4f4f4;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(1 1 1 / 15%);
@@ -489,7 +423,6 @@ header nav ul li a.active {
   height: auto;
   object-fit: cover;
   align-items: center;
-  height: 70%;
 }
 
 .card-content {
@@ -497,11 +430,7 @@ header nav ul li a.active {
 }
 
 .card-content h1 {
-  font-size: 30px;
-  text-align: center;
-}
-
-.card-content h2 {
+  font-size: 20px;
   text-align: center;
 }
 
