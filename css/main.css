@@ -133,16 +133,16 @@ header nav ul li a.active {
   width: 100%;
 }
 
-.menu-icon {
+/* .menu-icon {
   z-index: 999;
   display: none;
-}
+} */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .menu-icon {
     display: block;
   }
-}
+} */
 
 @media (max-width: 400px) {
   .sidebar {
@@ -340,25 +340,25 @@ header nav ul li a.active {
   bottom: -4px;
 }  */
 
-.welcome {
+/* .welcome {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(../imgs/Dark\ Gray\ Simple\ Dark\ Food\ &\ Restaurant\ Service\ Website.png);
   background-size: cover;
-}
+} */
 
-.main-heading h2 {
+/* .main-heading h2 {
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 4rem;
   position: relative;
 
-}
+} */
 
-.main-heading h2::before {
+/* .main-heading h2::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -396,7 +396,7 @@ header nav ul li a.active {
   color: #b88f78;
   padding: 2px;
   font-size: 22px;
-}
+} */
 
 .appetizers .myAppetizers {
   margin-top: 28px;
