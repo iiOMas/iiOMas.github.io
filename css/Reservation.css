@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "CopperPlateCondensed", cursive;
+    src: url(fonts/CopperplateCondensed.ttf);
+}
 .reservation {
     min-height: 100vh;
     display: flex;
@@ -18,24 +22,296 @@
     height: 100%;
     background-color: rgb(0 0 0 / 60%);
     z-index: 1;
+    
 }
 
 
-.res_block{
-    max-width: 700px;
+.res-block{
+    max-width: 1000px;
     width: 70%;
     align-items: center;
     margin-top: 130px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     z-index: 2;
-    
     background-color: rgba(209, 159, 127, 0.466);
-
 }
 
 
-.res_block .res_logo {
+.res-block .res_logo {
     display: block;
-    width: 40%;
+    width: 50%;
+    padding: 10px;
 }
+
+
+.res-block p.text {
+    font-family: "CopperPlateCondensed";
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    z-index: 2;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 738px) {
+    .res-block p.text {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 380px) {
+    .res-block p.text {
+        font-size: 1em;
+    }
+}
+
+
+
+hr.line {
+    margin: 50px auto;
+    width: 80%;
+    height: 3px;
+    background-color: white;
+    border-radius: 30%;
+    z-index: 2;
+}
+
+
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+label {
+    font-size: 18px;
+    color: white;
+    margin-top: 1%;
+    flex: 0 0 150px;
+    font-weight: bold;
+    margin-right: 10%;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+@media (max-width: 425px) {
+    input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 360px) {
+    input {
+        width: 150px;
+    }
+}
+
+@media (max-width: 270px) {
+    input {
+        width: 100px;
+    }
+}
+
+.name-fields {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.name-fields .names-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 5px;
+}
+
+.name-fields .names-input .first-name {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.name-fields .names-input .last-name {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.placeholder-text {
+    margin-left: 2%;
+    text-align: left;
+    font-size: 12px;
+    color: #ffffff93;
+    margin-top: 5px;
+}
+
+.email-field {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.phone-field {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.number-of-guests {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.number-of-guests label {
+    margin-top: 15px;
+    text-wrap: nowrap;
+}
+
+.number-of-guests select {
+    height: 50px;
+    border-radius: 10px;
+    border: 0px white;
+    padding: 10px;
+    flex: 1;
+}
+
+@media (max-width: 350px) {
+    select {
+        width: 150px;
+    }
+}
+
+@media (max-width: 280px) {
+    select {
+        width: 100px;
+    }
+}
+
+@media (max-width: 280px) {
+    .number-of-guests label {
+        text-wrap: wrap;
+    }
+}
+
+.date-time-field {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.date-time-field label {
+    margin-top: 5px;
+    margin-right: 11%;
+}
+
+.date-time-field input {
+    height: 50px;
+    border-radius: 10px;
+    border: 0px white;
+    flex: 1;
+}
+
+
+.special-notes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.special-notes label {
+    flex: 1;
+    text-align: left;
+    margin: 5px;
+}
+
+.special-notes textarea {
+    padding: 10px;
+    height: 150px;
+    border: 0px white;
+}
+
+@media (max-width: 350px) {
+    .special-notes textarea {
+        width: 150px;
+    }
+}
+
+@media (max-width: 240px) {
+    .special-notes textarea {
+        width: 100px;
+    }
+}
+
+
+.reserve-btn {
+    font-family: "CopperPlateCondensed";
+    width: 200px;
+    height: 55px;
+    padding: 10px;
+    margin-bottom: 40px;
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}
+
+.reserve-btn:hover {
+    background-color: #e56b3e;
+}
+
+@media (max-width: 350px) {
+    .reserve-btn {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+
+.invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+
+
+

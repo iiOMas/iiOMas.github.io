@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ratatouille Restaurant</title>
     <!-- to render the elements "like reset file" -->
+    <script src="/js/reservation.js" defer></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/Reservation.css">
-
 <body>
     <header>
         <div class="container">
@@ -41,10 +41,70 @@
     <section class="reservation">
         <div class="overlay"></div>
 
-        <div class="res_block">
+        <div class="res-block">
+
                 <img class="res_logo" src="imgs/download-removebg-preview.png" alt="logo">
-                <p>Reservation</p>
+                <p class="text">Reserve Your Table</p>
+                <hr class="line">
+                <form id="reservation-form">
+                    <div class="name-fields">
+                        <label for="names-title">Name</label>
+                        <div class="names-input">
+                            <div class="first-name">
+                                <input type="text" id="first-name" name="first-name" required>
+                                <span class="placeholder-text">First Name</span>
+                            </div>
+                            <div class="last-name">
+                                <input type="text" id="last-name" name="last-name" required>
+                                <span class="placeholder-text">Last Name</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="email-field">
+                        <label for="email">Email</label>
+                        <div class="email-input">
+                            <input type="email" id="email" name="email" required>
+                            <p class="placeholder-text">example@example.com</p>
+                        </div>
+                    </div>
+
+                    <div class="phone-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone" placeholder="(000) 000-0000" required>
+                    </div>
+
+                    <hr>
+
+                    <div class="number-of-guests">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="" selected disabled>Please select a number</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+
+                    <div class="date-time-field">
+                        <label for="date">Reservation Date & Time</label>
+                        <input type="datetime-local" id="date" class="date-picker" required>
+                    </div>
+
+                    <div class="special-notes">
+                        <label for="notes">Special Notes</label>
+                        <textarea id="notes" placeholder="Enter any special notes here"></textarea>
+                    </div>
+
+                    <button class="reserve-btn" type="submit">Reserve</button>
+                </form>
                 
+            </div>
     </section>
 
 
