@@ -44,9 +44,8 @@ html {
     width: 1170px;
   }
 }
-
 header {
- 
+  /* background-color: transparent; */
   position: fixed;
   /* fixed if i want the header to be fixed while scrolling */
   left: 0;
@@ -56,11 +55,11 @@ header {
   transition: background-color 0.4s ease-in-out;
 }
 
-/*header.scrolled {
-  background-color: black;
+header.scrolled {
+  background-color: #121315;
   opacity: 0.95;
 }
-*/
+
 header .container {
   display: flex;
   justify-content: space-between;
@@ -137,8 +136,20 @@ header nav ul li a.active {
   z-index: 999;
   display: none;
 }
+
+@media (max-width: 767px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
 .about{
-  background-image: url('images/background.jpg');
+  background-image: url('images/Lecsó.jfif');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -186,7 +197,7 @@ header nav ul li a.active {
 
 body{
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #d1a48c;
+  background-color: #121315;
 }
 
 .wrapper{
@@ -209,13 +220,13 @@ body{
 }
 
 .team .member{
-  background: #fff;
+  background: #b87f5e;
   margin: 5px;
   margin-bottom: 50px;
   width: 300px;
   padding: 20px;
   line-height: 20px;
-  color: #8e8b8b;  
+  color: #fff;  
   position: relative;
 }
 
@@ -233,7 +244,7 @@ body{
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #fff;
+  background:  #b87f5e;
 }
 
 .team .member .image img{
@@ -242,11 +253,13 @@ body{
   padding: 5px;
   border-radius: 50%;
 }
+.loc{
+  background-color:#121315;
+}
 .location{
   display: flex;
   justify-content: center;
   gap: 30px;
- 
 }
 .box{
   max-width: 600px;
@@ -301,7 +314,7 @@ width: 48.5%;
 }
 form button{
   padding: 12px 32px;
-  background: rgb(255, 102, 0);
+  background:  #b87f5e;
   border: none;
   outline: none;
   border-radius: 6px;
@@ -347,4 +360,108 @@ box-shadow: none;
   .reviews-display {
       flex-direction: column;
   }
+}
+footer ul {
+  list-style: none;
+}
+
+footer {
+  color: #fff;
+  background-color: #121315;
+}
+
+footer p {
+  color: #ccc;
+  max-width: 25em;
+  font-size: 0.9em;
+  line-height: 23px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.addres {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.media-icon li {
+  display: inline-block;
+  margin: 0.5em 0.5em 0.5em 0;
+}
+
+.media-icon a {
+  font-size: 0.8em;
+  width: 2em;
+  height: 2em;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.media-icon a:hover {
+  background: #fff;
+  color: #111;
+}
+
+footer .menu{
+  margin-bottom: 3em;
+}
+
+footer .menu li {
+  display: inline-block;
+  margin: 0 0.7em 0.7em 0;
+  text-align: center;
+}
+
+footer .menu a {
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+footer .menu a:hover {
+  color: #b88f78;
+}
+
+.input-wrap {
+  margin: 1em 0;
+  display: flex;
+}
+
+.input-wrap input {
+  padding: 0.5em;
+  border: none;
+  background-color: #20232a;
+  color: #ccc;
+}
+
+.input-wrap button{
+  padding: 0.8em;
+  background-color: #b87f5e;
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.input-wrap button:hover {
+  background-color: #fff;
+  color: #111;
 }
