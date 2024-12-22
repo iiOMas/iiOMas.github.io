@@ -515,3 +515,108 @@ header nav ul li a.active {
 .card:hover {
   border: 1px solid #b88f78;
 }
+
+footer ul {
+  list-style: none;
+}
+
+footer {
+  color: #fff;
+  background-color: #121315;
+}
+
+footer p {
+  color: #ccc;
+  max-width: 25em;
+  font-size: 0.9em;
+  line-height: 23px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.addres {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.media-icon li {
+  display: inline-block;
+  margin: 0.5em 0.5em 0.5em 0;
+}
+
+.media-icon a {
+  font-size: 0.8em;
+  width: 2em;
+  height: 2em;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.media-icon a:hover {
+  background: #fff;
+  color: #111;
+}
+
+footer .menu{
+  margin-bottom: 3em;
+}
+
+footer .menu li {
+  display: inline-block;
+  margin: 0 0.7em 0.7em 0;
+  text-align: center;
+}
+
+footer .menu a {
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+footer .menu a:hover {
+  color: #b88f78;
+}
+
+.input-wrap {
+  margin: 1em 0;
+  display: flex;
+}
+
+.input-wrap input {
+  padding: 0.5em;
+  border: none;
+  background-color: #20232a;
+  color: #ccc;
+}
+
+.input-wrap button{
+  padding: 0.8em;
+  background-color: #b87f5e;
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.input-wrap button:hover {
+  background-color: #fff;
+  color: #111;
+}
