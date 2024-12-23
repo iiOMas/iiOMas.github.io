@@ -4,7 +4,7 @@ const overlay = document.getElementById('overlay');
 const body = document.body;
 const select = document.querySelector('select');
 const amountContainer = document.getElementById('form-hidden');
-const close = document.getElementById('close')
+const close = document.getElementById('close');
 
 btns.forEach (btn => {
   btn.addEventListener('click', (event) => {
@@ -28,4 +28,26 @@ select.addEventListener('change', (event) => {
     amountContainer.hidden = true;
   }
 });
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  console.log("Form Submitted");
+  const fullName = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const amount = document.getElementById('amount').value;
+  const method = document.querySelector('input[name="payment-method"]:checked').value;
+
+  console.log("Name:", fullName);
+  console.log("Email:", email);
+  console.log("Amount:", amount);
+  console.log("Method:", method);
+
+  alert("Thank you !")
+
+  form.style.display = 'none';
+  overlay.style.display = 'none';
+  body.classList.remove('no-scroll');
+});
+
+
 
