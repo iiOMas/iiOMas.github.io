@@ -1,6 +1,8 @@
 document.getElementById("reservation-form").addEventListener("submit", function (event) {
   event.preventDefault();
   
+  console.log("Form Submitted");
+  
   const firstName = document.getElementById("first-name").value.trim();
   const lastName = document.getElementById("last-name").value.trim();
   const email = document.getElementById("email").value.trim();
@@ -9,17 +11,9 @@ document.getElementById("reservation-form").addEventListener("submit", function 
   const date = document.getElementById("date").value;
   const notes = document.getElementById("notes").value.trim();
   
+  console.log("Form Data:", firstName, lastName, email, phone, guests, date, notes);
+
   let formValid = true;
-  
-  function markFieldInvalid(fieldId) {
-      const field = document.getElementById(fieldId);
-      field.classList.add("invalid");
-  }
-  
-  function markFieldValid(fieldId) {
-      const field = document.getElementById(fieldId);
-      field.classList.remove("invalid");
-  }
 
   if (firstName === "") {
       markFieldInvalid("first-name");
@@ -84,6 +78,8 @@ document.getElementById("reservation-form").addEventListener("submit", function 
           notes: notes || "No special notes"
       };
 
+      console.log("Saving reservation details:", reservationDetails);
+
       const reservations = JSON.parse(localStorage.getItem("reservations")) || [];
       reservations.push(reservationDetails);
       localStorage.setItem("reservations", JSON.stringify(reservations));
@@ -93,3 +89,13 @@ document.getElementById("reservation-form").addEventListener("submit", function 
       alert("Please fill in all the required fields correctly.");
   }
 });
+
+function markFieldInvalid(fieldId) {
+    const field = document.getElementById(fieldId);
+    field.classList.add("invalid");
+}
+
+function markFieldValid(fieldId) {
+    const field = document.getElementById(fieldId);
+    field.classList.remove("invalid");
+}
