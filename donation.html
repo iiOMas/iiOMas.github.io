@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support the Little Chefs!</title>
+  <link rel="stylesheet" href="css/donation.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <script src="./js/donation.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+        <a href="#home" class="logo"><img src="imgs/download-removebg-preview.png" alt="logo"></a>
+        <nav>
+            <!-- <div onclick=showSideBar() class="menu-toggle">&#9776;</div> -->
+            <ul class="sidebar">
+                <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Chairty</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+            <ul class="nav-links">
+                <li class="hideOnMobile"><a class="active" href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Menu</a></li>
+                <li class="hideOnMobile"><a href="#">Events</a></li>
+                <li class="hideOnMobile"><a href="#">Reservation</a></li>
+                <li class="hideOnMobile"><a href="#">Chairty</a></li>
+                <li class="hideOnMobile"><a href="#">About us</a></li>
+                <li class="menu-icon" onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id="overlay">
+<form id="form">
+    <h2> Donate </h2>
+    <i id="close" class="fa-solid fa-xmark"><a></a></i>
+<hr>
+
+<div>
+  <i class="fa-solid fa-user"></i>
+  <input required id="name" type="text" placeholder="Full Name">
+</div>
+
+<div>
+  <i class="fa-solid fa-envelope"></i>
+  <input required id="email" type="email" placeholder="Email Address">
+</div>
+
+<div>
+  <i class="fa-solid fa-bars"></i>
+  <select required>
+    <option hidden selected value="">Choose</option>
+    <optgroup label="Meals">
+      <option value="tear 1">Feed One Person - 5$</option>
+      <option value="tear 2">Sponsor a Family Meal - 15$</option>
+      <option value="tear 3">Provide a Three-Course Meal - 25$</option>
+      <option value="more">Other Amount</option>
+    </optgroup>
+    <optgroup label="People">
+      <option value="more">Help Gaza Today</option>
+      <option value="more">Support Syria Now</option>
+    </optgroup>
+  </select>
+</div>
+
+<div hidden id="form-hidden">
+  <i class="fa-solid fa-hand-holding-dollar"></i>
+  <input id="amount" type="text" placeholder="Enter Amount">
+</div>
+
+<div>
+  <i class="fa-solid fa-credit-card"></i>
+  <label>Method</label>
+</div>
+
+<div class="payment-method">
+  <div>
+    <input required id="method1" type="radio" name="payment-method">
+    <label for="method1">MasterCard</label>
+  </div>
+  <div>
+    <input required id="method2" type="radio" name="payment-method">
+    <label for="method2">Visa</label>
+  </div>
+</div>
+
+<button type="submit">Send</button>
+</form>
+</div>
+
+<section class="sec1">
+  <div class="background"></div>
+  <div class="center">
+    <div class="text">
+      <h1>Support the little chefs</h1>
+      <p>Join us in making magic in the kitchen, one generous act at a time!</p>
+    </div>
+    <div class="btns">
+      <a href="#sec2">Serve a Meal Today</a>
+      <a href="#sec3">Help People in Need</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div id="sec2" class="sec2">
+
+    <h2> Choose a Meal Plan </h2>
+    <hr>
+
+    <div class="caard">
+      <div class="txt"> 
+        <h3>First Tear - 5$</h3>
+        <p class="last">Provide a warm meal for one.</p>
+        <a class="donate-btn">Prepare that meal !</a>
+      </div>
+      <img src="./imgs/meal1.jpg" alt="pic1">
+    </div>
+
+    <div class="caard">
+      <div class="txt"> 
+        <h3>Second Tear - 15$</h3>
+        <p class="last">Serve a full-course meal for a family of two.</p>
+        <a class="donate-btn">Prepare that meal !</a>
+      </div>
+      <img class="fix" src="./imgs/meal11.jpg" alt="">
+    </div>
+
+    <div class="caard">
+      <div class="txt"> 
+        <h3>Third Tear - 25$</h3>
+        <p class="last">Sponsor a three-course meal for a family.</p>
+        <a class="donate-btn">Prepare that meal !</a>
+      </div>
+      <img src="./imgs/meal33.jpg" alt="">
+    </div>
+
+  </div>
+</section>
+  <div id="sec3" class="sec3">
+    <h2> HELP OUR PEOPLE </h2>
+    <hr>
+    <div class="caard">
+      <div class="txt">
+        <h3>Help People in Gaza</h3>
+        <p>The people of Gaza are facing unprecedented challenges. With your support, <br> we can provide essential aid, rebuild lives, and bring hope to families in need.</p>
+        <p>Over 2 million people are affected by the ongoing crisis.</p>
+        <p class="last">80% of families rely on humanitarian aid for survival.</p>
+        <a class="donate-btn"> Make a Difference </a>
+      </div>
+      <img src="./imgs/gaza.png" alt="">
+    </div>
+
+
+    <div class="caard">
+      <div class="txt"> 
+        <h3>Help People in Syria</h3>
+        <p>After years of conflict, the people of Syria face immense hardships.<br> Together, we can deliver vital aid and restore dignity to those who have lost so much.</p>
+        <p>Millions displaced by conflict.</p>
+        <p>Limited access to food, clean water, and medical care.</p>
+        <p class="last">Children make up more than half of the refugees in dire need.</p>
+        <a class="donate-btn"> Be the Light Syria Needs </a>
+      </div>
+      <img src="./imgs/Syria.png" alt="">
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="col1">
+            <h2 class="addres">ADRESS</h2>
+            <p><i class="fa-solid fa-location-dot"></i> Anaheim,California</p>
+            <p><i class="fa-solid fa-phone"></i> +123456789</p>
+            <p><i class="fa-solid fa-envelope"></i> ratatouille@gmail.com</p>
+            <ul class="media-icon">
+                <li>
+                    <a href="">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col2">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Reservation</a></li>
+                <li><a href="">Chairty</a></li>
+                <li><a href="">About us</a></li>
+            </ul>
+            <p> Whether you're savoring a rustic ratatouille or indulging in a decadent dessert, you'll find
+                yourself transported to a cozy corner of France. Come dine with us, and remembe
+                anyone can cook</p>
+        </div>
+        <div class="col3">
+            <p>Subscribe to receive our new offers</p>
+            <form>
+                <div class="input-wrap">
+                    <input type="email" placeholder="example@gmail.com">
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
