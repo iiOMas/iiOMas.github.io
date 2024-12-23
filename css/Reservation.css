@@ -2,6 +2,11 @@
     font-family: "CopperPlateCondensed", cursive;
     src: url(fonts/CopperplateCondensed.ttf);
 }
+
+html body{
+    scroll-behavior: smooth;
+}
+
 .reservation {
     min-height: 100vh;
     display: flex;

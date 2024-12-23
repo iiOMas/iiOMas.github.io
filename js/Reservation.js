@@ -88,7 +88,7 @@
     } else {
         alert("Please fill in all the required fields correctly.");
     }
-    });
+});
 
     function markFieldInvalid(fieldId) {
         const field = document.getElementById(fieldId);
