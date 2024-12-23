@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratatouille Restaurant</title>
+    <!--to render the elements "like reset file"-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo"><img src="imgs/1.png" alt="logo"></a>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Chairty</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+                <ul class="nav-links">
+                    <li class="hideOnMobile"><a href="Index.html">Home</a></li>
+                    <li class="hideOnMobile"><a class="active" href="#">Menu</a></li>
+                    <li class="hideOnMobile"><a href="#">Events</a></li>
+                    <li class="hideOnMobile"><a href="#">Reservation</a></li>
+                    <li class="hideOnMobile"><a href="#">Chairty</a></li>
+                    <li class="hideOnMobile"><a href="#">About us</a></li>
+                    <li class="menu-icon" onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="landing">
+        <div class="overlay">
+            <div class="text">
+                <p>
+                    Ratatouille's Menu 
+                </p>
+            </div>
+            <div class="links">
+                <a href="#APPETIZERS">
+                    <button class="btn btn-primary">Appetizer</button>
+                </a>
+                <a href="#MAIN-COURSES">
+                    <button class="btn btn-primary">Main Courses</button>
+                </a>
+                <a href="#DESSERTS">
+                    <button class="btn btn-primary">Desserts</button>
+                </a>
+                <a href="#ADDITIONAL-DISHES">
+                    <button class="btn btn-primary">Additional Dishes</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="appetizers" id="APPETIZERS">
+        <div class="myAppetizers">
+            <h2>Appetizers</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="imgs/garlic.jpeg" alt="Garlic Snails">
+                <div class="card-content">
+                    <h1>Garlic Snails</h1>
+                    <h3>"Tender snails cooked in rich garlic butter and parsley, served in their shelles or a special dish."</h3>
+                </br>
+            </br>
+                    <h2>8$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/pork.jpeg" alt="Pork Rillettes">
+                <div class="card-content">
+                    <h1>Pork Rillettes</h1>
+                    <h3>"Slow-cooked and shredded pork seasoned with spices, served as a spread with crusty bread."</h3>
+                </br>
+            </br>
+                    <h2>10$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/french.jpeg" alt="French Onion Soup">
+                <div class="card-content">
+                    <h1>French Onion Soup</h1>
+                    <h3>"A hearty soup made with carmelized onions, beef broth, and topped with melted Cheese and crusty bread."</h3>
+                </br>
+            </br>
+                    <h2>7$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/meat.jpeg" alt="Meat Pie">
+                <div class="card-content">
+                    <h1>Meat Pie</h1>
+                    <h3>"A savory pie filled with seasoned meat, baked in a flaky pastry crust."</h3>
+                </br>
+            </br>
+                    <h2>11$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/ratatouille.jpeg" alt="Ratatouille Tart">
+                <div class="card-content">
+                    <h1>Ratatouille Tart</h1>
+                    <h3>"A flaky pastry filled with layered vegetables and herbed tomato sauce, baked to perfection."</h3>
+                </br>
+            </br>
+                    <h2>9$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/salmon.jpeg" alt="Salmon Tartare">
+                <div class="card-content">
+                    <h1>Salmon Tartare</h1>
+                    <h3>"Fresh raw salmon diced and mixed with lemon, capers, and herbs, seved chilled."</h3>
+                </br>
+            </br>
+                    <h2>11$</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="dotted-line">
+
+    <section class="main-courses" id="MAIN-COURSES">
+        <div class="myMainCourses">
+            <h2>Main Courses</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="imgs/chicken.jpeg" alt="Chicken in Red Wine">
+                <div class="card-content">
+                    <h1>Chicken in Red Wine</h1>
+                    <h3>"Chicken braised with red wine, mushrooms, onions, and bacon, creating a rich, flavorful sauce."</h3>
+                </br>
+            </br>
+                    <h2>17$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/beef.jpeg" alt="Beef Stew">
+                <div class="card-content">
+                    <h1>Beef Stew</h1>
+                    <h3>"A classic French dish of tender beef slow-cooked with red wine, vegetables, and aromatic herbs."</h3>
+                </br>
+            </br>
+                    <h2>18$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/duck.jpeg" alt="Duck Confit">
+                <div class="card-content">
+                    <h1>Duck Confit</h1>
+                    <h3>"Duck legs slow cooked in their own fat until tender, then crisped before serving."</h3>
+                </br>
+            </br>
+                    <h2>23$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/morocan.jpeg" alt="Moroccan Chicken">
+                <div class="card-content">
+                    <h1>Moroccan Chicken</h1>
+                    <h3>"Spiced chicken cooked with vegetables, dried fruits, and a rich, flavorful broth."</h3>
+                </br>
+            </br>
+                    <h2>20$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/fish.jpeg" alt="Fish Soup">
+                <div class="card-content">
+                    <h1>Fish Soup</h1>
+                    <h3>"A provencal-style soup made with a mix of seafood, saffron, and aromatic spices, served with croutons and rouille."</h3>
+                </br>
+            </br>
+                    <h2>22$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/alsatian.jpeg" alt="Alsatian Tart">
+                <div class="card-content">
+                    <h1>Alsatian Tart</h1>
+                    <h3>"A thin, crispy flatbread topped with cream, onions, and bacon, baked to perfection."</h3>
+                </br>
+            </br>
+                    <h2>14$</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="dotted-line">
+
+    <section class="desserts" id="DESSERTS">
+        <div class="myDesserts">
+            <h2>Desserts</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="imgs/creme.jpeg" alt="Creme Brulee">
+                <div class="card-content">
+                    <h1>Creme Brulee</h1>
+                    <h3>"A creamy Custard dessert topped with a caramelized sugar crust."</h3>
+                </br>
+            </br>
+                    <h2>7$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/upside.jpeg" alt="Upside-Down Apple Tart">
+                <div class="card-content">
+                    <h1>Upside-Down Apple Tart</h1>
+                    <h3>"A caramelized apple tart baked upside down for a rich, buttery flavor."</h3>
+                </br>
+            </br>
+                    <h2>8$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/chocolate.jpeg" alt="Chocolate Mousse">
+                <div class="card-content">
+                    <h1>Chocolate Mousse</h1>
+                    <h3>"A light and airy dessert made with dark chocolate and whipped cream."</h3>
+                </br>
+            </br>
+                    <h2>6$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/meringue.jpeg" alt="Meringue Cookies">
+                <div class="card-content">
+                    <h1>Meringue Cookies</h1>
+                    <h3>"Delicate almond-based cookies with a crisp shell and chewy center."</h3>
+                </br>
+            </br>
+                    <h2>9$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/cream.jpeg" alt="Cream Puffs">
+                <div class="card-content">
+                    <h1>Cream Puffs</h1>
+                    <h3>"pastry shells filled with cream and topped with chocolate sauce."</h3>
+                </br>
+            </br>
+                    <h2>6$</h2>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/fruit.jpeg" alt="Fruit Custard">
+                <div class="card-content">
+                    <h1>Fruit Custard</h1>
+                    <h3>"A baked Custard dessert infused with fresh fruits like cherries or berries."</h3>
+                </br>
+            </br>
+                    <h2>5$</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="dotted-line">
+
+    <section class="additional-dishes" id="ADDITIONAL-DISHES">
+        <div class="myAdditionalDishes">
+            <h2>Additional Dishes</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="imgs/grilled.jpeg" alt="Grilled Ham and Cheese Sandwich">
+                <div class="card-content">
+                    <h1>Grilled Ham and Cheese Sandwich</h1>
+                    <h3>"A crispy Sandwich filled with ham and melted Cheese, grilled to golden perfection."</h3>
+                </br>
+                    <h2>9$</h2>
+                </div> 
+            </div>
+            <div class="card">
+                <img src="imgs/bacon.jpeg" alt="Bacon and Cheese Quiche">
+                <div class="card-content">
+                    <h1>Bacon and Cheese Quiche</h1>
+                    <h3>"A savory tart made with eggs, cream, bacon, and Cheese in a flaky crust."</h3>
+                </br>
+            </br>
+                    <h2>13$</h2>
+                </div> 
+            </div>
+            <div class="card">
+                <img src="imgs/salmon2.jpeg" alt="Salmon Baked in Parchment">
+                <div class="card-content">
+                    <h1>Salmon Baked in Parchment</h1>
+                    <h3>"Fresh salmon fillet baked with herbs and vegetables inside a Parchment paper pouch."</h3>
+                </br>
+            </br>
+                    <h2>18$</h2>
+                </div> 
+            </div>
+            <div class="card">
+                <img src="imgs/potato.jpeg" alt="Potato and Cheese Bake">
+                <div class="card-content">
+                    <h1>Potato and Cheese Bake</h1>
+                    <h3>"A creamy potato gratin layered with Cheese and baked until golden."</h3>
+                </br>
+            </br>
+                    <h2>12$</h2>
+                </div> 
+            </div>
+            <div class="card">
+                <img src="imgs/blood.jpeg" alt="Blood Sausage">
+                <div class="card-content">
+                    <h1>Blood Sausage</h1>
+                    <h3>"A flavorful sausage made with pork blood, spices, and onions, served with mashed potatoes."</h3>
+                </br>
+            </br>
+                    <h2>10$</h2>
+                </div> 
+            </div>
+            <div class="card">
+                <img src="imgs/chicken2.jpeg" alt="Chicken Chasseur">
+                <div class="card-content">
+                    <h1>Chicken Chasseur</h1>
+                    <h3>"Chicken simmered in a rich sauce of mushrooms, tomatoes, white wine, and herbs."</h3>
+                </br>
+            </br>
+                    <h2>19$</h2>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="col1">
+                <h2 class="addres">ADDRESS</h2>
+                <p><i class="fa-solid fa-location-dot"></i> Anaheim,California</p>
+                <p><i class="fa-solid fa-phone"></i> +123456789</p>
+                <p><i class="fa-solid fa-envelope"></i> ratatouille@gmail.com</p>
+                <ul class="media-icon">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col2">
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Reservation</a></li>
+                    <li><a href="">Chairty</a></li>
+                    <li><a href="">About us</a></li>
+                </ul>
+                <p> Whether you're savoring a rustic ratatouille or indulging in a decadent dessert, you'll find
+                    yourself transported to a cozy corner of France. Come dine with us, and remembe
+                    anyone can cook</p>
+            </div>
+            <div class="col3">
+                <p>Subscribe to receive our new offers</p>
+                <form>
+                    <div class="input-wrap">
+                        <input type="email" placeholder="example@gmail.com">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
