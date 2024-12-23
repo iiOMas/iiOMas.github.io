@@ -135,6 +135,7 @@ form input,textarea,select:focus {
     outline: none;
 }
 
+
 .name-fields {
     display: flex;
     flex-wrap: wrap;
@@ -319,10 +320,10 @@ form input,textarea,select:focus {
 }
 
 
-.invalid {
+/* .invalid {
     border: 2px solid red;
     background-color: #ffe6e6;
-}
+} */
 
 
 

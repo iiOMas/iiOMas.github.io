@@ -15,6 +15,17 @@
 
     let formValid = true;
 
+    function markFieldInvalid(fieldId) {
+        const field = document.getElementById(fieldId);
+        field.classList.add("invalid");
+    }
+    
+    function markFieldValid(fieldId) {
+        const field = document.getElementById(fieldId);
+        field.classList.remove("invalid");
+    }
+    
+
     if (firstName === "") {
         markFieldInvalid("first-name");
         formValid = false;
@@ -80,22 +91,9 @@
 
         console.log("Saving reservation details:", reservationDetails);
 
-        const reservations = JSON.parse(localStorage.getItem("reservations")) || [];
-        reservations.push(reservationDetails);
-        localStorage.setItem("reservations", JSON.stringify(reservations));
-
         document.getElementById("reservation-form").reset();
     } else {
         alert("Please fill in all the required fields correctly.");
     }
 });
 
-    function markFieldInvalid(fieldId) {
-        const field = document.getElementById(fieldId);
-        field.classList.add("invalid");
-    }
-
-    function markFieldValid(fieldId) {
-        const field = document.getElementById(fieldId);
-        field.classList.remove("invalid");
-    }
